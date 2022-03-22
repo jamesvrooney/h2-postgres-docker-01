@@ -7,7 +7,7 @@
 
 
     <changeSet id="create-user-table" author="jamesrooney">
-        <createTable tableName="user">
+        <createTable tableName="dog_user">
             <column name="id" type="uuid">
                 <constraints primaryKey="true"/>
             </column>
