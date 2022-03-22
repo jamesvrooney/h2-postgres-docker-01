@@ -1,0 +1,17 @@
+spring:
+  name: referees
+
+
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+
+  liquibase.changeLog: classpath:db/changelog/master-changelog.xml
+
+logging.level.liquibase: INFO
+
+spring.h2.console.enabled: true
